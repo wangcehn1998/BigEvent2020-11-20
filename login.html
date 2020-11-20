@@ -7,11 +7,6 @@
     <!-- 加载css文件 -->
     <link rel="stylesheet" href="./assets/lib/layui/css/layui.css" />
     <link rel="stylesheet" href="./login/login.css" />
-
-    <!-- 加载js文件 -->
-    <script src="./assets/lib/jquery.js"></script>
-    <script src="./assets/lib/layui/layui.all.js"></script>
-    <script src="./login/login.js"></script>
   </head>
   <body>
     <!-- logo -->
@@ -33,7 +28,7 @@
             name="username"
             required
             lay-verify="required"
-            placeholder="请输入标题"
+            placeholder="请输入用户名"
             autocomplete="off"
             class="layui-input"
           />
@@ -46,7 +41,7 @@
             name="password"
             required
             lay-verify="required"
-            placeholder="请输入标题"
+            placeholder="请输入密码"
             autocomplete="off"
             class="layui-input"
           />
@@ -83,7 +78,7 @@
             name="username"
             required
             lay-verify="required"
-            placeholder="请输入标题"
+            placeholder="请输入用户名"
             autocomplete="off"
             class="layui-input"
           />
@@ -96,10 +91,10 @@
             type="password"
             name="password"
             required
-            lay-verify="required"
+            lay-verify="required|changdu"
             placeholder="请输入标题"
             autocomplete="off"
-            class="layui-input"
+            class="layui-input pwd"
           />
         </div>
 
@@ -109,7 +104,7 @@
           <input
             type="password"
             required
-            lay-verify="required"
+            lay-verify="required|same"
             placeholder="请输入标题"
             autocomplete="off"
             class="layui-input"
@@ -133,4 +128,8 @@
       </form>
     </div>
   </body>
+  <!-- 加载js文件 -->
+  <script src="./assets/lib/jquery.js"></script>
+  <script src="./assets/lib/layui/layui.all.js"></script>
+  <script src="./login/login.js"></script>
 </html>
